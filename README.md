@@ -37,6 +37,16 @@ and used.
 
 mvn clean package && java -jar target/returns-calculator-1.0-SNAPSHOT.jar
 
+* Alternatively the application can be run using Docker as follows
+
+create a docker image with:
+
+docker build -f DockerFile -t returns-calculator .
+
+create and run the container with:
+
+docker run -p 8080:8080 returns-calculator
+
 * To populate the database with sample clients post start up:
  
 Make a GET request to http://localhost:8080/populate 
