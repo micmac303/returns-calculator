@@ -116,7 +116,7 @@ public class InterestControllerTest {
                 .contentType(contentType))
                 .andReturn();
 
-        assertEquals("{\"id\":3,\"returnAmount\":5000,\"client\":{\"id\":1}}", result.getResponse().getContentAsString());
+        assertEquals("{\"id\":6,\"returnAmount\":5000,\"client\":{\"id\":1}}", result.getResponse().getContentAsString());
     }
 
     @Test
@@ -215,7 +215,7 @@ public class InterestControllerTest {
                 .contentType(contentType))
                 .andReturn();
 
-        assertEquals("{\"id\":1,\"returnAmount\":5101,\"client\":{\"id\":1}}", result.getResponse().getContentAsString());
+        assertEquals("{\"id\":4,\"returnAmount\":5101,\"client\":{\"id\":1}}", result.getResponse().getContentAsString());
     }
 
     @Test
